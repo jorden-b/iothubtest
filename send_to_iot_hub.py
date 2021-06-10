@@ -12,6 +12,11 @@ from azure.iot.device import IoTHubDeviceClient, Message
 from azure.iot.device.exceptions import CredentialError
 from azure.iot.device.exceptions import ConnectionFailedError
 
+Device_Provisioning_Service = "0ne000FFA42"
+ID_scope = "751ca1c0-b2a6-43a9-88f8-a485da327a2c"
+symmetric_key = "JEdiA8ROGr8j901xFBIxqSnj8u2af+f5cEuT2r/BVoo="
+DPS_endpoint = "global.azure-devices-provisioning.net"
+
 # DICTIONARY = '{"array: []"}'
 START_TIME = time.time()
 READ_INTERVAL = int(sys.argv[6]) #int
