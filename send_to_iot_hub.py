@@ -15,7 +15,7 @@ from azure.iot.device.exceptions import ConnectionFailedError
 # DICTIONARY = '{"array: []"}'
 START_TIME = time.time()
 READ_INTERVAL = 5 #int
-THRESHOLD = 2 # int
+THRESHOLD = 5 # int
 EQUIDISTANT = True # True or False
 ULTRASONIC_MSG = '{{"DeviceId": {DeviceId}, "Ultrasonicsensor": {Ultrasonicsensor}}}'
 DEVICE_ID = '"SmartController"'
