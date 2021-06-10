@@ -22,7 +22,7 @@ START_TIME = time.time()
 READ_INTERVAL = 5 #int
 THRESHOLD = 1 # int
 EQUIDISTANT = True # True or False
-ULTRASONIC_MSG = 22
+ULTRASONIC_MSG = '{{"DeviceId": {DeviceId}, "Ultrasonicsensor": {Ultrasonicsensor}}}'
 DEVICE_ID = '"SmartController"'
 # The device connection string to authenticate the device for IoT Hub access
 CONNECTION_STRING = 'HostName=SmartControllerTest.azure-devices.net;DeviceId=SmartControllerDemo;SharedAccessKey=ssj6oxdpm39Gjn3XtlJ2+WqOnDaFN/JrDR8Q5nLK0y8='
@@ -101,7 +101,7 @@ try:
     if(EQUIDISTANT == True):
         send_telemetry_equidistant()
     else:
-        send_telemetry_non_equidistant()
+        # send_telemetry_non_equidistant()
 
 except KeyboardInterrupt:
     print("Device disconnected")
