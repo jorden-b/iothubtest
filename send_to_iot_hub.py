@@ -19,14 +19,14 @@ DPS_endpoint = "global.azure-devices-provisioning.net"
 
 # DICTIONARY = '{"array: []"}'
 START_TIME = time.time()
-READ_INTERVAL = int(sys.argv[6]) #int
-THRESHOLD = int(sys.argv[7]) # int
-EQUIDISTANT = sys.argv[5] # True or False
-ULTRASONIC_MSG = sys.argv[2]
-DEVICE_ID = sys.argv[1]
+READ_INTERVAL = 5 #int
+THRESHOLD = 1 # int
+EQUIDISTANT = True # True or False
+ULTRASONIC_MSG = 22
+DEVICE_ID = '"SmartController"'
 # The device connection string to authenticate the device for IoT Hub access
-CONNECTION_STRING = sys.argv[3]
-A_VALUE = int(sys.argv[4])  # A value between 0 and 3
+CONNECTION_STRING = 'HostName=SmartControllerTest.azure-devices.net;DeviceId=SmartControllerDemo;SharedAccessKey=ssj6oxdpm39Gjn3XtlJ2+WqOnDaFN/JrDR8Q5nLK0y8='
+A_VALUE = 0  # A value between 0 and 3
 ANALOG = f"in_current{A_VALUE}_raw".format()
 print(CONNECTION_STRING)
 print(ULTRASONIC_MSG)
